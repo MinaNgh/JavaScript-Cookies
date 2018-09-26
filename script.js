@@ -5,7 +5,7 @@ function setCookie(cname, cvalue, exdays) {
 	d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
 	//toUTCstring() display UTC date and time as string(converts a Date object to a string)
 	var expires = "expires="+d.toUTCString();
-	document.cookie = cname + "=" + cvalue + "," + expires + ",path=/";
+	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;";
 }
 function getCookie(cname) {
 	var name = cname + "=";
